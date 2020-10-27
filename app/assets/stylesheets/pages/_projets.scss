@@ -1,0 +1,50 @@
+#projets-section {
+  flex-direction: column;
+  height: 90vh;
+  width: 100vw;
+  background: asset-url('circle2.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  h2{
+    text-align: center;
+    margin: 48px;
+  }
+}
+
+.projets{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  h5{
+    margin: 8px;  }
+}
+
+.projets-links {
+  display:flex;
+  justify-content: center;
+}
+
+.projet {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5000ca;
+  font-size: 22px;
+  font-weight: normal;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 16px;
+  a {
+    text-decoration: none;
+    color: #5000ca;
+  }
+  & a:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,29 @@
+#contact-section {
+  background: asset-url('blob1.svg');
+  background-repeat : no-repeat;
+  background-position: left;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2{
+    text-align: center;
+    padding-top: 64px;
+    margin-top: 48px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+li {
+  display: inline;
+  justify-content: center;
+}
+

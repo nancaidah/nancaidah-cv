@@ -1,0 +1,105 @@
+<section id="home-section">
+  <div class="home-container">
+    <div class="row">
+        <div class="photo col-12 col-lg-6"><%= image_tag("nancaidah.png") %></div>
+        <div class="texts col-12 col-lg-6">
+          <h1>Nancaidah Toure-Chauvin </h1>
+          <h3>Developpeuse junior - Ruby on rails</h3>
+          <p>Créatrice de superbes applications web, mais pas que !</p>
+          <div class="buttons">
+            <%= link_to "Mes projets", projets_path, class: "btn-projet" %>
+            <%= link_to "Me contacter", contact_path, class: "btn-contact" %>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-section">
+  <h2>A propos</h2>
+  <div class="about-central">
+    <p>
+      <strong>"</strong> Après des études en gastronomie et un master en management d'hotellerie-restauration, je me suis découverte une passion pour l'écosystème web.
+      La tenue d'un blog personnel m'a amené à mettre en place des stratégies SEO et à m'interesser plus en profondeur aux produits digitaux. Souhaitant acquérir plus de compétences techniques, j'ai décidé de me former au développement web en intégrant le <a href="https://www.lewagon.com/" target="blank">Bootcamp du Wagon.</a><strong>"</strong>
+    </p>
+
+    <div class="competences">
+      <h4>Compétences</h4>
+      <hr>
+      <div class="stack">
+        <div class="rails"><%= image_tag('rails.png')%></div>
+        <div class="heroku"><%= image_tag('heroku.png') %></div>
+        <div class="postgres"><%= image_tag('postgres.png') %></div>
+        <div class="github"><%= image_tag('github.png') %></div>
+        <div class="figma"><%= image_tag('figma.png') %></div>
+        <div class="bootstrap"><%= image_tag('bootstrap.jpg') %></div>
+        <div class="photoshop"><%= image_tag('photoshop.jpg') %></div>
+        <div class="rush"><%= image_tag('rush.png') %></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projets-section">
+  <h2>Projets</h2>
+  <div class="projets">
+    <h5>Github</h5>
+    <div class="projets-links">
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(http://www.reducewaste.io/assets/draw3-04bdd2a005a79809446931a84fd5eb211c103065640b11f90f5e448fbd56a399.svg)">
+        <a href="https://reduce-waste.io" target="blank">
+        Reduce
+        </a>
+      </div>
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+        <a href="https://waterbnb440.herokuapp.com/" target="blank">
+        Waterbnb
+        </a>
+      </div>
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)">
+        <a href="https://github.com/nancaidah/rails-mister-cocktail" target="blank">
+        Mister Cocktail
+        </a>
+      </div>
+    </div>
+
+    <hr>
+
+    <h5>Behance</h5>
+    <div class="projets-links">
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/24368876037219.5c5d917a930fc.png)">
+        <a href="https://www.behance.net/gallery/76037219/Thia" target="blank">
+       Théia
+        </a>
+      </div>
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/93a3be75711329.5c540c83c3be1.png)">
+        <a href="https://www.behance.net/gallery/75711329/Monoprix-Delivery-App" target="blank">
+        Monoprix
+        </a>
+      </div>
+      <div class="projet" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/73b9cf75129495.5c4471f61dc0b.png)">
+        <a href="https://www.behance.net/gallery/75129495/Ouigo-Travel-App" target="blank">
+        Ouigo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-section">
+  <h2>Contact</h2>
+  <form col-sm-12 col-md-6 col-lg-6>
+  <div class="form-group">
+    <label for="name">Votre nom</label>
+    <input type="name" class="form-control" id="name" placeholder="Nom Prenom">
+  </div>
+  <div class="form-group">
+    <label for="email">Votre adresse email</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="message">Votre message</label>
+    <textarea class="form-control" id="message" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Envoyer</button>
+</form>
+</section>
