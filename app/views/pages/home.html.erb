@@ -4,11 +4,11 @@
         <div class="photo col-12 col-lg-6"><%= image_tag("nancaidah.png") %></div>
         <div class="texts col-12 col-lg-6">
           <h1>Nancaidah Toure-Chauvin </h1>
-          <h3>Developpeuse junior - Ruby on rails</h3>
+          <h3>Developpeuse junior - RoR</h3>
           <p>Créatrice de superbes applications web, mais pas que !</p>
           <div class="buttons">
-            <%= link_to "Mes projets", projets_path, class: "btn-projet" %>
-            <%= link_to "Me contacter", contact_path, class: "btn-contact" %>
+            <%= link_to "Mes projets", "#{root_path}#projets-section", class: "btn-projet" %>
+            <%= link_to "Me contacter", "#{root_path}#contact-section", class: "btn-contact" %>
           </div>
         </div>
     </div>
